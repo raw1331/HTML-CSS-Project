@@ -1,0 +1,45 @@
+
+
+
+.container-fluid{
+background-color: #81b7d2;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+width: 100%;
+}
+
+.navbar-brand{
+color: black;
+font-size: 40px;
+text-shadow:2px 2px #e0cdbe	;
+padding: 0 30px;
+}
+ 
+a{
+display:inline-block;
+text-decoration: none;
+color:black;
+font-size: 20px;
+padding: 20px;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+a:hover{
+background-color:#878f99 ;
+transition: .10s;
+}
+
+.about{
+font-family: Arial Rounded MT Bold;
+text-align: center;
+color: #292a34;
+background-color: #b7c8db;
+}
+
+.footer{
+text-align: center;
+color: #2b3770;
+background-color: #b7c8db;
+}
+
