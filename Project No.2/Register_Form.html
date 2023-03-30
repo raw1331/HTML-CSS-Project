@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application form</title>
+    <link rel="stylesheet" href="form/form.css">
+
+    <script>
+function validationForm()
+{
+    var name = document.getElementById('name').value;
+    var mail = document.getElementById('mail').value;
+    var gender = document.getElementById('gender').value;
+    var bday = document.getElementById('bday').value;
+    var address = document.getElementById('address').value;
+    var password = document.getElementById('password').value;
+    var confrompass = document.getElementById('confrompass').value;
+
+            if(name == ""){
+              alert(document.getElementById('name').innerHTML =" Please Enter Your Name");
+                return false;
+            }
+            else if(mail ==""){
+                alert(document.getElementById('mail').innerHTML ="Please Enter Your Mail")
+                return false;
+            }
+            else if(gender ==""){
+                alert(document.getElementById('gender').innerHTML ="please select Your Gender ")
+                return false;
+            }
+            else if(bday ==""){
+                alert(document.getElementById('bday').innerHTML ="Date of Birth cannot be blank ")
+                return false;
+            }
+            else if(address ==""){
+                alert(document.getElementById('address').innerHTML ="Please Enter Your Address ")
+                return false;
+            }
+            else if(password ==""){
+                alert(document.getElementById('password').innerHTML ="Please Enter Your Password ")
+                return false;
+            }
+            else if(confrompass ==""){
+                alert(document.getElementById('confrompass').innerHTML ="Please Enter Your Conform Password ")
+                return false;
+            }
+
+
+
+            
+
+}
+
+
+    </script>
+</head>
+<body>
+       
+        <h1>Registration Form</h1>
+        <div >
+    <form name="rgform" method="post" onsubmit="validationForm()">
+
+<label for="name">Enter Your Name</label>
+<input type="text" name="full name" id="name" placeholder="Enter Your Full Name">
+<br/>
+<label for="mail">Enter Your Email Address</label>
+<input type="text" name="email" id="mail" placeholder="Enter Your Email Address">
+<br/>
+<label>Select Your Gender</label><span id="gender"></span><br/><br/>
+<input type="radio" name="Male" id="Male">Male
+<input type="radio" name="Female" id="Female">Female
+<input type="radio" name="Transgender" id="Transgender">Transgender
+<br/><br/>
+<label for="bday">Enter Your Date Of Birth</label><br><br/>
+<input type="date" name="bday" id="bday"><span id="fname"></span><br><br/>
+
+<label for="address">Enter Your Address</label>
+<textarea name="address" id="address"></textarea>
+<br/>
+<label for="pass">Password</label>
+<input type="text" id="password" name="pass" placeholder="Enter your Password"><br/>
+<label for="confrompass">Confrom Password</label>
+<input type="text" id="confrompass" name="confrom password" placeholder="Enter your Confrom Password">
+<br/>
+
+<input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+       </html>
